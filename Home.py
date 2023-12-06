@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit_authenticator as stauth
 from cus import st_style
 from cus.dependancies import sign_up, fetch_users
-from st_pages import Page, show_pages, add_page_title
+# from st_pages import Page, show_pages, add_page_title
 # from cus.run_style import basicStyle
 
 
