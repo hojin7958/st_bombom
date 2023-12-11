@@ -21,6 +21,10 @@ def hide_streamlit_style_():
     hide_streamlit_style = """
                 <style>
                 #MainMenu {visibility: hidden;}
+                [data-testid="stHeader"] {
+                    display: none
+                },
+
                 [data-testid="collapsedControl"] {
                     display: none
                 }

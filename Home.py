@@ -48,7 +48,7 @@ def intro_page():
     st.write("")
     st.info("""
     :green[봄봄]은 영업에 도움이될 만한 작은 개발 프로젝트들을 하고 있어요  
-    아! 이런게 필요한데 라고 생각이 드시면 언제든 메일로 문의주세요  
+    아! 이런게 필요한데 라고 생각이 드시면 언제든 메일로 문의주세요     
     bomboms.kr@gmail.com
             """)
 
@@ -75,7 +75,7 @@ def main_page():
     with st.expander(label="봄톡은 무료?유료?",expanded=True):
         st.markdown("""
         ##### :red[무료]로 얼마든지 사용하세요
-        **봄봄도 먹고 살아야하니깐 2024년 어느날 한달 이용료는 [커피한잔 값...] 정도로 유료화 계획이 있어요
+        **봄봄도 먹고 살아야하니깐 2024년 더운 여름쯤 한달 [커피한잔 값...] 정도로 유료화 계획이 있어요
         """)
 
     with st.expander(label="봄톡 사용방법은?",expanded=True):
@@ -87,6 +87,7 @@ def main_page():
 
 
 
+def button_to_page():
     col1, col2, col3, col4, col5 = st.columns(5)
     with col3:
         moveto_Downloadpage = st.button("봄톡 사용해보기", type="primary")
@@ -108,6 +109,7 @@ def side_bar():
 if __name__ == "__main__":
     intro_page()
     main_page()
+    button_to_page()
     side_bar()
 
 
