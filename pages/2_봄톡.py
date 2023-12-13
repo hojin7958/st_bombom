@@ -33,13 +33,18 @@ def file_download_button(file_name, button_name):
             st.download_button(button_name, f, file_name=file_name, type="primary", use_container_width=True)
 
 
+def link_button(button_name, link):
+    col1, col2, col3, col4, col5 = st.columns(5)
+    with col3:
+        st.link_button(button_name, url=link, use_container_width=True)
+
 
 
 if __name__ == "__main__":
     # intro_page()
     main_page()
     file_download_button('bomtalk.zip',"봄톡 다운로드 받기")
-    
+    link_button("봄톡 사용법 보기",'https://getupnote.com/share/notes/YBNBOwOiq8Qe1IawFC0e46JSYUh2/dbe51e9d-6083-4520-9090-e1a697e7f1a4')
     # file_download_button('manual.pdf',"봄톡 메뉴얼 보기")
     button_to_page("처음으로 다시가기","home")
     # side_bar()
