@@ -1,11 +1,10 @@
-from streamlit_extras.switch_page_button import switch_page 
 import streamlit as st
-import streamlit_authenticator as stauth
+# import streamlit_authenticator as stauth
 from cus import st_style
 from cus.dependancies import sign_up, fetch_users
-# from st_pages import Page, show_pages, add_page_title
+from st_pages import Page, show_pages, add_page_title
 # from cus.run_style import basicStyle
-
+from streamlit_extras.switch_page_button import switch_page
 
 ####
 ### 기본셋팅
@@ -75,7 +74,6 @@ def main_page():
     with st.expander(label="봄톡은 무료?유료?",expanded=True):
         st.markdown("""
         ##### :red[무료]로 얼마든지 사용하세요
-        **봄봄도 먹고 살아야하니깐 2024년 더운 여름쯤 한달 [커피한잔 값...] 정도로 유료화 계획이 있어요
         """)
 
     with st.expander(label="봄톡 사용방법은?",expanded=True):
